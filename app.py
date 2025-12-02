@@ -1,20 +1,39 @@
-import streamlit as st
 from pathlib import Path
+import streamlit as st
 
+# Configuração da página
 st.set_page_config(
     page_title="UJN – Ecossistema de Publicação Científica",
     layout="wide",
     page_icon="📘"
 )
 
-# Caminho da pasta onde está o app.py
-APP_DIR = Path(__file__).parent
+# CSS global: fonte Arial, fundo branco, layout mais limpo
+st.markdown("""
+<style>
+/* Fonte geral da página */
+html, body, [class*="stApp"] {
+    font-family: Arial, sans-serif !important;
+    background-color: #ffffff !important;
+}
 
-# Caminho completo para o index.html na MESMA pasta do app.py
-html_file = APP_DIR / "index.html"
+/* Container principal mais "limpo" */
+.block-container {
+    padding-top: 1rem !important;
+    padding-bottom: 1.5rem !important;
+    max-width: 1200px !important;
+}
 
-# Lê o conteúdo do HTML
-html_content = html_file.read_text(encoding="utf-8")
+/* Remove fundo cinza de alguns elementos */
+section[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
-# Mostra o HTML no Streamlit
-st.components.v1.html(html_content, height=3000, scrolling=True)
+# Lê o HTML da landing page
+html_path = Path("index.html")
+html_content = html_path.read_text(encoding="utf-8")
+
+# Injeta o HTML direto na página (SEM iframe, SEM scroll separado)
+st.markdown(html_content, unsafe_allow_html=True)
