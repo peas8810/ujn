@@ -1,59 +1,257 @@
-<!-- LOGO DA EDITORA UJN -->
-<div style="text-align:center; margin-top:20px;">
-    <img src="https://editora.ujn.ojsbr.com/public/presses/1/pageHeaderLogoImage_pt_BR.png"
-         alt="Logo Editora UJN"
-         style="max-width: 260px; height:auto;">
+<style>
+  :root {
+    --azul: #003A70;
+    --laranja: #F37021;
+    --cinza-fundo: #f5f5f7;
+    --texto: #222222;
+    --texto-suave: #666666;
+  }
+
+  .ujn-page {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px 16px 40px 16px;
+    color: var(--texto);
+  }
+
+  .ujn-page * {
+    box-sizing: border-box;
+  }
+
+  .ujn-logo {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .ujn-logo img {
+    max-width: 260px;
+    height: auto;
+  }
+
+  .ujn-header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .ujn-header h1 {
+    font-size: 2rem;
+    color: var(--azul);
+    margin-bottom: 8px;
+  }
+
+  .ujn-header p {
+    font-size: 1rem;
+    color: var(--texto-suave);
+  }
+
+  .ujn-section {
+    margin-bottom: 28px;
+  }
+
+  .ujn-section h2 {
+    font-size: 1.3rem;
+    color: var(--azul);
+    margin-bottom: 8px;
+  }
+
+  .ujn-section p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .ujn-section p strong {
+    color: var(--azul);
+  }
+
+  .ujn-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 4px 0;
+  }
+
+  .ujn-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 4px;
+    font-size: 0.98rem;
+    color: var(--texto-suave);
+  }
+
+  .ujn-list li::before {
+    content: "•";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    color: var(--laranja);
+  }
+
+  .ujn-image-center {
+    text-align: center;
+    margin: 32px 0 16px 0;
+  }
+
+  .ujn-image-center img {
+    max-width: 520px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  .ujn-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+    margin-top: 6px;
+  }
+
+  .ujn-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .ujn-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-size: 0.96rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.15s ease-in-out, transform 0.1s ease-in-out;
+  }
+
+  .ujn-btn-primary {
+    background-color: var(--laranja);
+    color: #ffffff;
+  }
+
+  .ujn-btn-secondary {
+    background-color: var(--azul);
+    color: #ffffff;
+  }
+
+  .ujn-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  .ujn-footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--texto-suave);
+  }
+
+  @media (max-width: 600px) {
+    .ujn-header h1 {
+      font-size: 1.7rem;
+    }
+    .ujn-section {
+      margin-bottom: 22px;
+    }
+  }
+</style>
+
+<div class="ujn-page">
+  <!-- Logo Editora UJN -->
+  <div class="ujn-logo">
+    <img
+      src="https://editora.ujn.ojsbr.com/public/presses/1/pageHeaderLogoImage_pt_BR.png"
+      alt="Logo Editora UJN"
+    />
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="ujn-header">
+    <h1>Lançamento do Ecossistema UJN</h1>
+    <p>
+      Revista científica Qualis B2 e editora própria integradas em um ecossistema completo de publicação científica.
+    </p>
+  </header>
+
+  <!-- Seção: Apresentação -->
+  <section class="ujn-section">
+    <h2>Uma nova fase na nossa trajetória editorial</h2>
+    <p>
+      É com grande satisfação que apresentamos o <strong>Ecossistema UJN – Unified Journals Network</strong>,
+      que reúne uma <strong>revista científica Qualis B2</strong> e uma <strong>editora acadêmica própria</strong>,
+      construída sobre <strong>9 anos de experiência</strong> em gestão editorial universitária.
+    </p>
+    <p>
+      Ao longo dessa trajetória, atuamos na organização, estruturação e consolidação de processos editoriais em
+      diferentes instituições de ensino e pesquisa, implementando fluxos profissionais, revisão por pares qualificada
+      e estratégias de indexação e visibilidade científica.
+    </p>
+  </section>
+
+  <!-- Seção: Destaques do ecossistema -->
+  <section class="ujn-section">
+    <h2>O que o Ecossistema UJN oferece</h2>
+    <ul class="ujn-list">
+      <li>Revista científica Qualis B2, com alcance nacional e internacional;</li>
+      <li>Editora profissional para livros, capítulos, e-books e coletâneas acadêmicas;</li>
+      <li>Ferramentas de inteligência artificial para apoio à escrita, formatação e detecção de plágio;</li>
+      <li>Processos editoriais éticos, rigorosos e alinhados às boas práticas internacionais (COPE);</li>
+      <li>Suporte completo a autores, grupos de pesquisa, PPGs e instituições.</li>
+    </ul>
+  </section>
+
+  <!-- Imagem da Revista REMUNOM -->
+  <section class="ujn-section">
+    <div class="ujn-image-center">
+      <img
+        src="https://remunom.ojsbr.com/public/journals/2/homepageImage_pt_BR.jpg"
+        alt="Imagem Revista REMUNOM"
+      />
+    </div>
+    <div class="ujn-caption">
+      REMUNOM – Revista Multidisciplinar do Nordeste Mineiro (Qualis B2 e ampla indexação).
+    </div>
+  </section>
+
+  <!-- Seção: Convite -->
+  <section class="ujn-section">
+    <h2>Por que isso importa para você?</h2>
+    <p>
+      Porque agora você conta com um <strong>ambiente editorial integrado, sólido e seguro</strong>,
+      preparado para acolher sua produção científica desde o manuscrito até a publicação final —
+      seja em periódico, livro, capítulo ou obra técnica.
+    </p>
+    <p>
+      Estamos prontos para apoiar autores, pesquisadores e instituições que buscam
+      <strong>qualidade, visibilidade e impacto</strong> em seus trabalhos.
+    </p>
+  </section>
+
+  <!-- Botões / Links -->
+  <section class="ujn-section">
+    <div class="ujn-buttons">
+      <a
+        class="ujn-btn ujn-btn-primary"
+        href="https://editora.ujn.ojsbr.com/ujn/index"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Acessar Editora UJN
+      </a>
+
+      <a
+        class="ujn-btn ujn-btn-secondary"
+        href="https://remunom.ojsbr.com/multidisciplinar/index"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Acessar Revista REMUNOM
+      </a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="ujn-footer">
+    Unified Journals Network – UJN • Ecossistema de publicação científica<br />
+    Excelência editorial para quem produz ciência.
+  </footer>
 </div>
-
-<!-- TÍTULO -->
-<h1 style="text-align:center; color:#003A70; margin-top:20px;">
-    Lançamento do Ecossistema UJN
-</h1>
-
-<!-- TEXTO CURTO -->
-<p style="max-width:900px; margin:20px auto; font-size:1.05rem; line-height:1.7;">
-    É com grande satisfação que anunciamos o <strong>Ecossistema UJN – Unified Journals Network</strong>,
-    unindo nossa <strong>revista científica Qualis B2</strong> e uma <strong>editora própria</strong>
-    construída sobre <strong>9 anos de experiência</strong> em gestão editorial universitária.
-</p>
-
-<p style="max-width:900px; margin:12px auto; font-size:1.05rem;">
-    Nessa trajetória, consolidamos a <strong>REMUNOM</strong> como periódico de relevância nacional e internacional,
-    implementamos práticas editoriais profissionais e desenvolvemos ferramentas avançadas
-    de <strong>IA aplicada à produção científica</strong>.
-</p>
-
-<p style="max-width:900px; margin:12px auto; font-size:1.05rem;">
-    Agora, inauguramos oficialmente a <strong>Editora UJN</strong>, ampliando nossa atuação e oferecendo um ambiente
-    editorial completo, seguro e integrado para autores, pesquisadores, PPGs e instituições.
-</p>
-
-<!-- LISTA -->
-<ul style="max-width:900px; margin:20px auto; font-size:1.05rem;">
-    <li>Revista científica Qualis B2</li>
-    <li>Editora para livros, capítulos e coletâneas</li>
-    <li>Ferramentas avançadas de IA editorial</li>
-    <li>Fluxos éticos e rigorosos, alinhados às diretrizes COPE</li>
-    <li>Apoio completo à produção científica</li>
-</ul>
-
-<!-- IMAGEM DA REVISTA REMUNOM -->
-<div style="text-align:center; margin:40px auto;">
-    <img src="https://remunom.ojsbr.com/public/journals/2/homepageImage_pt_BR.jpg"
-         alt="Imagem Revista REMUNOM"
-         style="max-width:500px; border-radius:10px; box-shadow:0 8px 20px rgba(0,0,0,0.25);">
-</div>
-
-<!-- LINKS -->
-<div style="text-align:center; margin-top:20px;">
-    <a href="https://editora.ujn.ojsbr.com/ujn/index"
-       style="background:#F37021; color:white; padding:12px 24px; border-radius:8px; margin:10px; display:inline-block;">
-       Acessar Editora UJN
-    </a>
-
-    <a href="https://remunom.ojsbr.com/multidisciplinar/index"
-       style="background:#003A70; color:white; padding:12px 24px; border-radius:8px; margin:10px; display:inline-block;">
-       Acessar Revista REMUNOM
-    </a>
-</div>
-
